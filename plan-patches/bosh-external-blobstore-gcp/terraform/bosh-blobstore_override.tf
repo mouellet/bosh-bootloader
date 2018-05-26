@@ -5,6 +5,6 @@ resource "google_storage_bucket" "bosh-blobstore" {
   force_destroy = true
 }
 
-output "bucket_name" {
+output "director__bucket_name" {
   value = "${google_storage_bucket.bosh-blobstore.name}"
 }
